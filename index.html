@@ -1,26 +1,361 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <title>Redirecting to External Site</title>
-    <script>
-        // Menyembunyikan peringatan ngrok
-        window.addEventListener('load', function() {
-            var warningElement = document.querySelector('[id^="ngrok-"]');
-            if (warningElement) {
-                warningElement.style.display = 'none';
-            }
-        });
+    <title>Kebijakan Privasi - SiUjian</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
         
-        // Mengarahkan ke URL baru
-        window.location.replace("https://0034-180-254-73-14.ngrok-free.app/absensi-sekolah-qr-code/login");
-    </script>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .last-updated {
+            color: #6c757d;
+            font-style: italic;
+        }
+        
+        .language-toggle {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        
+        .language-btn {
+            padding: 10px 20px;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .language-btn:first-child {
+            border-radius: 5px 0 0 5px;
+        }
+        
+        .language-btn:last-child {
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .language-btn.active {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        
+        .language-content {
+            display: none;
+        }
+        
+        .language-content.active {
+            display: block;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        h3 {
+            color: #3498db;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        
+        .permission {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        
+        .permission strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #495057;
+        }
+        
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+            color: #6c757d;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .language-toggle {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .language-btn {
+                width: 200px;
+                margin-bottom: 5px;
+                border-radius: 5px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <p>Jika Anda tidak diarahkan secara otomatis, silakan klik <a href="https://0034-180-254-73-14.ngrok-free.app/absensi-sekolah-qr-code/login">di sini</a>.</p>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy - SiUjian</h1>
+            <p class="last-updated">Last Updated: December 19, 2024</p>
+        </header>
+        
+        <div class="language-toggle">
+            <button class="language-btn active" onclick="toggleLanguage('id')">Bahasa Indonesia</button>
+            <button class="language-btn" onclick="toggleLanguage('en')">English</button>
+        </div>
+        
+        <!-- Indonesian Version -->
+        <div id="id-content" class="language-content active">
+            <h2>Bahasa Indonesia</h2>
+            
+            <h3>1. Pendahuluan</h3>
+            <p>SiUjian adalah aplikasi browser ujian terkunci (secure exam browser) yang dirancang untuk membantu guru dan siswa dalam pelaksanaan ujian berbasis web. Aplikasi ini <span class="highlight">TIDAK</span> mengelola soal, jawaban, atau nilai ujian.</p>
+            
+            <h3>2. Data yang TIDAK Kami Kumpulkan</h3>
+            <p>SiUjian berkomitmen untuk menjaga privasi pengguna. Kami <span class="highlight">TIDAK</span> mengumpulkan, menyimpan, atau mengirimkan data pribadi apapun, termasuk:</p>
+            <ul>
+                <li>Nama atau identitas pengguna</li>
+                <li>Alamat email</li>
+                <li>Nomor telepon</li>
+                <li>Data lokasi</li>
+                <li>Jawaban ujian</li>
+                <li>Nilai atau hasil ujian</li>
+                <li>Foto, video, atau media lainnya</li>
+                <li>Riwayat browsing</li>
+            </ul>
+            
+            <h3>3. Data yang Diproses Secara Lokal</h3>
+            <p>Data berikut hanya tersimpan di perangkat Anda dan <span class="highlight">TIDAK</span> dikirim ke server kami:</p>
+            <ul>
+                <li>Status premium (apakah Anda sudah membeli upgrade)</li>
+                <li>Jumlah token yang dibuat hari ini (untuk batasan akun gratis)</li>
+            </ul>
+            <p>Data ini dapat dihapus dengan menghapus data aplikasi melalui pengaturan perangkat.</p>
+            
+            <h3>4. Token Ujian</h3>
+            <ul>
+                <li>Token ujian adalah kode sementara yang menghubungkan URL ujian</li>
+                <li>Token memiliki masa berlaku (default: 2 jam)</li>
+                <li>Token tidak berisi informasi pribadi</li>
+                <li>Token disimpan di server untuk sementara dan dihapus setelah kadaluarsa</li>
+            </ul>
+            
+            <h3>5. Koneksi Internet</h3>
+            <p>Aplikasi memerlukan koneksi internet untuk:</p>
+            <ul>
+                <li>Membuat token ujian (Mode Guru)</li>
+                <li>Memvalidasi token (Mode Siswa)</li>
+                <li>Memuat halaman ujian web (Google Form, Kahoot, dll)</li>
+                <li>Memproses pembelian melalui Google Play</li>
+            </ul>
+            
+            <h3>6. Pembelian Dalam Aplikasi</h3>
+            <p>Pembelian diproses sepenuhnya melalui sistem Google Play Billing. Kami <span class="highlight">TIDAK</span> menyimpan informasi kartu kredit atau pembayaran Anda. Silakan lihat <a href="https://policies.google.com/privacy" target="_blank">Kebijakan Privasi Google</a> untuk informasi lebih lanjut.</p>
+            
+            <h3>7. Izin Aplikasi</h3>
+            <div class="permission">
+                <strong>INTERNET</strong>
+                Diperlukan untuk mengakses halaman ujian berbasis web
+            </div>
+            <div class="permission">
+                <strong>Screen Pinning/LockTask</strong>
+                Untuk mengunci layar selama ujian berlangsung
+            </div>
+            
+            <h3>8. Keamanan</h3>
+            <ul>
+                <li>FLAG_SECURE aktif selama ujian untuk mencegah screenshot dan rekam layar</li>
+                <li>Data WebView (cache, cookies) dihapus otomatis setelah ujian selesai</li>
+                <li>Domain dibatasi hanya pada URL ujian yang valid</li>
+            </ul>
+            
+            <h3>9. Privasi Anak-Anak</h3>
+            <p>Aplikasi ini dirancang aman untuk digunakan oleh anak-anak (siswa) karena:</p>
+            <ul>
+                <li>Tidak mengumpulkan data pribadi</li>
+                <li>Tidak menampilkan iklan</li>
+                <li>Tidak ada fitur sosial atau chat</li>
+                <li>Tidak ada konten buatan pengguna</li>
+            </ul>
+            
+            <h3>10. Perubahan Kebijakan Privasi</h3>
+            <p>Kami dapat memperbarui kebijakan privasi ini dari waktu ke waktu. Perubahan signifikan akan diumumkan melalui pembaruan aplikasi.</p>
+            
+            <h3>11. Hubungi Kami</h3>
+            <p>Jika Anda memiliki pertanyaan atau kekhawatiran tentang kebijakan privasi ini, silakan hubungi kami melalui email:</p>
+            <p>📧 <strong>Syahroni10072023@gmail.com</strong></p>
+        </div>
+        
+        <!-- English Version -->
+        <div id="en-content" class="language-content">
+            <h2>English Version</h2>
+            
+            <h3>1. Introduction</h3>
+            <p>SiUjian is a secure exam browser application designed to help teachers and students conduct web-based examinations. This app does <span class="highlight">NOT</span> manage exam questions, answers, or grades.</p>
+            
+            <h3>2. Data We DO NOT Collect</h3>
+            <p>SiUjian is committed to protecting user privacy. We do <span class="highlight">NOT</span> collect, store, or transmit any personal data, including:</p>
+            <ul>
+                <li>User names or identities</li>
+                <li>Email addresses</li>
+                <li>Phone numbers</li>
+                <li>Location data</li>
+                <li>Exam answers</li>
+                <li>Grades or test results</li>
+                <li>Photos, videos, or other media</li>
+                <li>Browsing history</li>
+            </ul>
+            
+            <h3>3. Locally Stored Data</h3>
+            <p>The following data is stored ONLY on your device and is <span class="highlight">NOT</span> sent to our servers:</p>
+            <ul>
+                <li>Premium status (whether you have purchased the upgrade)</li>
+                <li>Number of tokens created today (for free account limitations)</li>
+            </ul>
+            <p>This data can be deleted by clearing the app data through your device settings.</p>
+            
+            <h3>4. Exam Tokens</h3>
+            <ul>
+                <li>Exam tokens are temporary codes that link to exam URLs</li>
+                <li>Tokens have an expiration time (default: 2 hours)</li>
+                <li>Tokens do not contain personal information</li>
+                <li>Tokens are temporarily stored on our server and deleted after expiration</li>
+            </ul>
+            
+            <h3>5. Internet Connection</h3>
+            <p>The app requires an internet connection to:</p>
+            <ul>
+                <li>Create exam tokens (Teacher Mode)</li>
+                <li>Validate tokens (Student Mode)</li>
+                <li>Load web exam pages (Google Forms, Kahoot, etc.)</li>
+                <li>Process purchases through Google Play</li>
+            </ul>
+            
+            <h3>6. In-App Purchases</h3>
+            <p>Purchases are processed entirely through the Google Play Billing system. We do <span class="highlight">NOT</span> store your credit card or payment information. Please refer to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a> for more information.</p>
+            
+            <h3>7. App Permissions</h3>
+            <div class="permission">
+                <strong>INTERNET</strong>
+                Required to access web-based exam pages
+            </div>
+            <div class="permission">
+                <strong>Screen Pinning/LockTask</strong>
+                To lock the screen during exams
+            </div>
+            
+            <h3>8. Security Measures</h3>
+            <ul>
+                <li>FLAG_SECURE is active during exams to prevent screenshots and screen recording</li>
+                <li>WebView data (cache, cookies) is automatically cleared after exam completion</li>
+                <li>Domains are restricted to valid exam URLs only</li>
+            </ul>
+            
+            <h3>9. Children's Privacy</h3>
+            <p>This app is designed to be safe for use by children (students) because:</p>
+            <ul>
+                <li>It does not collect personal data</li>
+                <li>It does not display advertisements</li>
+                <li>It has no social features or chat</li>
+                <li>It has no user-generated content</li>
+            </ul>
+            
+            <h3>10. Changes to This Privacy Policy</h3>
+            <p>We may update this privacy policy from time to time. Significant changes will be announced through app updates.</p>
+            
+            <h3>11. Contact Us</h3>
+            <p>If you have any questions or concerns about this privacy policy, please contact us via email:</p>
+            <p>📧 <strong>syahroni0008@gmail.com</strong></p>
+        </div>
+        
+        <footer>
+            <p>© 2024 SiUjian. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script>
+        function toggleLanguage(lang) {
+            // Remove active class from all buttons and content
+            const buttons = document.querySelectorAll('.language-btn');
+            const contents = document.querySelectorAll('.language-content');
+            
+            buttons.forEach(btn => btn.classList.remove('active'));
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Add active class to selected button and content
+            if (lang === 'id') {
+                buttons[0].classList.add('active');
+                document.getElementById('id-content').classList.add('active');
+            } else {
+                buttons[1].classList.add('active');
+                document.getElementById('en-content').classList.add('active');
+            }
+        }
+    </script>
 </body>
 </html>
